@@ -21,6 +21,13 @@ class TestMathFunctions(unittest.TestCase):
         self.assertEqual(Calculator.add(2.2, 2.5), 4.7)
         self.assertEqual(Calculator.add(0.2, 0.2), 0.4)
         self.assertAlmostEqual(Calculator.add(2.2, -3.1), -0.89999999999999, places=7) #použití pro desetiné číslo
+
+
+    def test_division_by_zero(self):
+        with self.assertRaises(ValueError):
+            self.c.divide(3, 0)
+    #Valueerror od ucitele ale nefunguje mi
+
 """
     def test_division_by_zero(self):
     #    # test chyb a vyjímek
@@ -28,11 +35,7 @@ class TestMathFunctions(unittest.TestCase):
             self.Calculator.divide(3,0)
     #zjistiti proč to nefunguje!!!!
 """
-""""""
-    def test_division_by_zero(self):
-        with self.assertRaises(ValueError):
-            self.c.divide(3, 0)
-    #Valueerror od ucitele ale nefunguje mi
+
 
 
 if __name__ == '__main__':
