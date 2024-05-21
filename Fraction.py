@@ -8,7 +8,7 @@ class Fraction:
 
     def __add__(self, other): # +
         pass
-
+    
     def __radd__(self, other):  # +=
         pass
     def __truediv__(self, other): # /
