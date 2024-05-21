@@ -28,9 +28,11 @@ class TestMathFunctions(unittest.TestCase):
             self.Calculator.divide(3,0)
     #zjistiti proč to nefunguje!!!!
 """
+""""""
     def test_division_by_zero(self):
         with self.assertRaises(ValueError):
             self.c.divide(3, 0)
+    #Valueerror od ucitele ale nefunguje mi
 
 
 if __name__ == '__main__':
