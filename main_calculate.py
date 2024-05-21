@@ -35,3 +35,26 @@ w = Calculator.divide(10,5)
 print(f"print w divide: {w}")
 
 
+from views import *
+def run_app():
+
+    while True:
+        main_menu_views()
+        user_choice = int(input("Zadej volbu: "))
+
+        if user_choice == 1:
+            p = Calculator.add(input1_views(),input1_views())
+            print(p)
+
+        elif user_choice == 2:
+            input1_view()
+            input2_views()
+
+
+        elif user_choice == 0:
+            exit()
+
+        else:
+            pass#wrong_choice_message()
+
+run_app()

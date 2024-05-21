@@ -1,3 +1,8 @@
 Zadání kalkulačka Task 2
 create Calculator class
 s funkcemi
+
+
+
+
+
