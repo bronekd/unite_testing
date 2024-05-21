@@ -4,7 +4,9 @@ import unittest
 from Calculator import *
 
 class TestMathFunctions(unittest.TestCase):
-
+    def setUp(self):
+        self.c = Calculator()
+        # na začátku testu nastavení ještě existuje setUpClass
     def test_addition(self):
         self.assertEqual(Calculator.add(2, 3), 5)
         self.assertEqual(Calculator.add(-1, 1), 0)
@@ -19,14 +21,16 @@ class TestMathFunctions(unittest.TestCase):
         self.assertEqual(Calculator.add(2.2, 2.5), 4.7)
         self.assertEqual(Calculator.add(0.2, 0.2), 0.4)
         self.assertAlmostEqual(Calculator.add(2.2, -3.1), -0.89999999999999, places=7) #použití pro desetiné číslo
-
-    #def test_division_by_zero(self):
+"""
+    def test_division_by_zero(self):
     #    # test chyb a vyjímek
-    #    with self.assertRaises(ValueError):
-    #        self.Calculator.divide(3,0)
+        with self.assertRaises(ValueError):
+            self.Calculator.divide(3,0)
     #zjistiti proč to nefunguje!!!!
-
-
+"""
+    def test_division_by_zero(self):
+        with self.assertRaises(ValueError):
+            self.c.divide(3, 0)
 
 
 if __name__ == '__main__':
