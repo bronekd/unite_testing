@@ -46,9 +46,9 @@ def run_app():
             p = Calculator.add(input1_views(),input1_views())
             print(p)
 
-        elif user_choice == 2:
-            input1_view()
-            input2_views()
+        #elif user_choice == 2:
+        #    input1_view()
+        #    input2_views()
 
 
         elif user_choice == 0:
@@ -58,3 +58,9 @@ def run_app():
             pass#wrong_choice_message()
 
 run_app()
+
+
+# PODÍVAT SE K UČITELI
+# PATERN STRATEGY PRO VÝPOČET
+
+
