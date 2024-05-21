@@ -29,3 +29,9 @@ print()
 
 f = Calculator.largest(1,22,3,4,52)
 print(f)
+
+print()
+w = Calculator.divide(10,5)
+print(f"print w divide: {w}")
+
+
