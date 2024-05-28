@@ -21,4 +21,4 @@ if __name__ == '__main__':
     unittest.main()
 
 #ukol task 2 je lepší umí věci zapsat a přečíst bude umět vrátit hodnoty v různých soustávách poskládat třádu a napsat testy. otestovat to jak převádět mezi octa, hexadecimal, binar
-# 
+#
